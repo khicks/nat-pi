@@ -126,6 +126,7 @@ install_packages() {
 
 configure() {
   print_info "Configuring services..."
+  cp "$DIR"/files/isc-dhcp-server /etc/default/isc-dhcp-server
   cp "$DIR"/files/dhcpd.conf /etc/dhcp/dhcpd.conf
   cp "$DIR"/files/dhcpcd.conf /etc/dhcpcd.conf
   cp "$DIR"/files/sysctl.conf /etc/sysctl.d/50-nat.conf
